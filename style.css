@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #1a1a2e;
+    letter-spacing: 1px;
+
+}
+
+nav{
+    background-color: #1a1a2e;
+    height: 60px;
+    width: 100%;
+}
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+#navbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-around;
+}
+#logo{
+    font-size: 42px;
+    color: #f72f41;
+    padding-top: 8px;
+    float: left;
+    margin: auto;
+}
+#logo p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 50px;
+    margin-top: -43px;
+}
+footer{
+    background-color: #1a1a2e;
+    height: 150px;
+}
+#foot{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+}
+#foot h6{
+    font-size: 12px;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+
+}
+
+#logo-foot{
+    font-size: 42px;
+    color: #f72f41;
+    padding-top: 8px;
+    float: left;
+    margin: auto;
+}
+#logo-foot p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 50px;
+    margin-top: -43px;
+}
+#social-links{
+    color: white;
+    display: grid;
+    grid-template-columns: auto 20px 20px 20px auto;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+#social-links a{
+    text-decoration: none;
+    color: white;
+}
+.s-links{
+    transition: all 0.3s ease;
+}
+.s-links:hover{
+    font-size: 20px;
+
+}
+#box{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.025);
+    box-shadow: 0px 0px 3px white;
+    border-radius: 20px;
+    margin: auto;
+}
+#box h1{
+    padding-top: 12%;
+    text-align: center;
+    color: transparent;
+    font-size: 10rem;
+    transition: all 0.3s ease;
+}
+#ball{
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+#bubble{
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: rgba(70, 181, 209, 0.8);
+    box-shadow: 1px 1px 2px white;
+    transition: all 0.3s ease;
+}
+
+.bubbles-popped{
+    display: none;
+}
+
+#button-box{
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto 20% 20% 10% 10% auto;
+    margin: 25px auto;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+
+}
+.input-box{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    text-align: center;
+
+}
+.input-title{
+    background-color: teal;
+    height: 100%;
+    padding-top: 8px;
+    font-size: 14px;
+}
+.input-user{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 1px solid teal;
+}
+.buttons{
+    border-radius: 50px;
+    background-color: teal;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons:hover{
+    box-shadow: 0px 0px 5px white;
+}
+#launch_btn{
+    background-color: #f72f41;
+}
+@media only screen and (max-width: 768px) {
+    #box{
+        width: 90%;
+        height: 80vh;
+    }
+    #button-box{
+        margin-top: 0%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 20% 20% 10% 10% auto;
+        grid-gap: 20px;
+    }
+    #box h1{
+        font-size: 5rem;
+        padding-top: 50%;
+    }
+    .input-title{
+        padding-top: 10%;
+    }
+}
